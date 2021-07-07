@@ -46,7 +46,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     list-style: none;
 }
 img{
-    width: 100%;
+    max-width: 100px;
 }
 div.flex{
     display: flex;
@@ -85,6 +85,10 @@ html h2 {
     flex-direction: column;
     justify-content: center;
     margin: 0px auto;
+  }
+  .secaoCursos img:hover{
+      cursor: pointer;
+      background-color: var(--cor-cinza-claro);
   }
   
   .secaoCursos h3 {
@@ -192,8 +196,60 @@ html h2 {
 
 
 /* CONTATO  */
-
+div.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+div.flex h2{
+    font-weight: 600;
+}
+div.flex p {
+    font-size: 15px;
+    text-align: left;
+    font-weight: 500;
+    color: var(--cor-cinza-claro);
+    margin: 20px 40px -20px;
+}
+div.flex a{
+    margin: 0px 0px -20px;
+    color: var(--cor-cinza-claro);
+}
+div.flex li {
+    text-align: left;
+    font-weight: 500;
+    margin-top: 10px;
+}
+div.form-input-model {
+    font-family: 'lato';
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 60px 10px 0px;
+}
+div.flex input[type='submit']{
+    font-size: 0.8;
+    border-radius: 5px;
+    padding: 5px 5px 5px;
+    margin-left: 80px;
+    border: 1px solid rgb(209, 209, 209);
+    
+}
+img.icons8 {
+    padding-left: 40px;
+    width: 20px;
+}
 /* FOOTER  */
+.arrow {
+    border: solid var(--cor-azul-claro);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-left: 160px;
+}
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
