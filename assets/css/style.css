@@ -137,6 +137,7 @@ p {
   padding: 10px 20px;
 }
 
+
 .secaoDestaque_h2 {
   font-size: 1.7em;
 }
@@ -174,6 +175,7 @@ p {
 .secaoDestaqueFormulario_button:hover {
   background-color: var(--cor-cinza);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .secaoSobre {
@@ -222,6 +224,7 @@ p {
   color: var(--cor-branco);
   background-color: var(--cor-cinza-claro);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 /* CURSOS */
@@ -319,6 +322,7 @@ p {
   padding-bottom: 20px;
   font-weight: 500;
 }
+
 .calendario-data-rodape {
   border-top: 0.1px solid #e6e6e6;
   color: var(--cor-cinza-claro);
@@ -424,6 +428,7 @@ footer {
   .nav-topo__ul__li:hover {
     color: var(--cor-branco);
     transition: 0.5s;
+    cursor: pointer;
   }
 
   .menu-hamburguer {
