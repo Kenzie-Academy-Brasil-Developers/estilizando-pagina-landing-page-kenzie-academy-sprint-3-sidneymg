@@ -236,10 +236,6 @@ p {
   justify-content: center;
   margin: 0px auto;
 }
-.secaoCursos img:hover {
-  cursor: pointer;
-  background-color: var(--cor-cinza-claro);
-}
 
 .secaoCursos h3 {
   font-weight: bold;
@@ -572,5 +568,22 @@ footer {
   div.flex  {
     flex-direction: row;
   }
+  .secaoContato-informacoes > h2 {
+    text-align: right;
+  }
+  .form-input-model input[type="text"]{
+    padding-top: 100px;
+  }
+  .flex-column textarea {
+    padding-right: 270px;
+    padding-bottom: 50px;
+  }
+  .texto {
+    display: flex;
+  }
+  .flex-column input[type="text"] {
+    padding: 0px 18px 0px;
+  }
+
 }
 /* MEDIA QUERIES */
