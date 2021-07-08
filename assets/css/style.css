@@ -284,7 +284,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px auto;
+  align-items: center;
+  
 }
 .secaoCalendar h2 {
   padding-bottom: 30px;
@@ -293,15 +294,13 @@ p {
 }
 .secaoCalendar li {
   border: 1px solid var(--cor-azul-escuro);
-  height: 70vh;
-  width: 30vh;
+  width: 260px;
   padding-top: 50px;
-  margin: 0px auto;
   margin-bottom: 30px;
 }
 .calendario-data {
   text-align: center;
-  padding: 50px 84px 43px;
+  padding: 50px 82px;
   font-size: 36px;
   color: var(--cor-branco);
   background-color: var(--cor-azul-escuro);
@@ -316,10 +315,9 @@ p {
   text-align: center;
   font-family: "lato";
   letter-spacing: 1px;
-  line-height: 30px;
   color: var(--cor-cinza-claro);
-  font-size: 15px;
-  padding-bottom: 20px;
+  line-height: 20px;
+  padding-bottom: 50px;
   font-weight: 500;
 }
 
@@ -337,48 +335,47 @@ p {
   border: none;
   border-radius: 5px;
   margin: 0px auto;
-  display: block;
-  margin-top: 15px;
   padding: 12px 80px 12px;
+  margin: 20px 0px 20px 0px
+
 }
 
 /* CONTATO  */
-div.flex {
+.secaoContato-informacoes {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
   background-color: rgb(243, 243, 243);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-div.flex h2 {
+.flex h2 {
+  text-align: center;
   padding-top: 20px;
   font-weight: 600;
 }
-div.flex p {
+.flex p {
   font-size: 15px;
   text-align: left;
-  font-weight: 500;
   color: var(--cor-cinza-claro);
-  margin: 20px 40px -20px;
+  margin: 10px 40px 10px 28px;
 }
-div.flex a {
-  margin: 0px 0px -20px;
+.flex a {
   color: var(--cor-cinza-claro);
+  text-decoration: none;
 }
-div.flex li {
-  text-align: left;
-  font-weight: 500;
-  margin-top: 10px;
-}
-div.form-input-model {
+.form-input-model {
   font-family: "lato";
-  padding: 10px 60px 10px 0px;
+  padding: 10px;
 }
-div.flex input[type="submit"] {
+.flex input[type="submit"] {
   font-size: 0.8;
   border-radius: 5px;
   padding: 5px 5px 5px;
-  margin-left: 80px;
+  margin-left: 140px;
   border: 1px solid rgb(209, 209, 209);
 }
 img.icons8 {
@@ -387,6 +384,9 @@ img.icons8 {
 }
 form {
   padding-bottom: 30px;
+}
+.kenzie {
+  display: none;
 }
 /* FOOTER  */
 footer {
@@ -548,6 +548,29 @@ footer {
 
   .secaoCursos li{
     width: 30%;
+  }
+  footer {
+    padding-left: 40%;
+
+  }
+  .secaoCalendar ul {
+    display: flex;
+  }
+  .secaoCalendar li {
+    margin: 20px 20px 100px;
+  }
+  
+  .kenzie {
+    display: flex;
+    align-items: center;
+  }
+  .kenzie > p {
+    font-weight: 500;
+    padding-left: 10px;
+    color: var(--cor-cinza-claro);
+  }
+  div.flex  {
+    flex-direction: row;
   }
 }
 /* MEDIA QUERIES */
