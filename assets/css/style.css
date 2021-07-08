@@ -531,5 +531,23 @@ footer {
   .flex-col {
     width: 500px;
   }
+  .secaoCursos article{
+    width: 100%;
+  }
+
+  .secaoCursos img{
+    width: 20%;
+  }
+
+  .secaoCursos ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+
+  .secaoCursos li{
+    width: 30%;
+  }
 }
 /* MEDIA QUERIES */
