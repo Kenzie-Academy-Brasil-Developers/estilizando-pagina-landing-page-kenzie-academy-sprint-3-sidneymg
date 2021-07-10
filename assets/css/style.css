@@ -34,6 +34,7 @@ family=Lato -> Títulos, textos
   --cor-azul-escuro: #00043e;
   --cor-cinza: #303030;
   --cor-cinza-claro: #818181;
+  --cor-cinza-clarinho: rgb(243, 243, 243);
 }
 
 /* GERAL */
@@ -55,6 +56,10 @@ ul {
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+body {
+  min-width: 320px;
 }
 
 img {
@@ -135,6 +140,7 @@ p {
   color: var(--cor-branco);
   text-align: center;
   padding: 10px 20px;
+  font-weight: normal;
 }
 
 
@@ -153,7 +159,7 @@ p {
 }
 
 .secaoDestaqueFormulario > input {
-  width: 150px;
+  width: 250px;
   height: 30px;
   border: 2px solid transparent;
   border-top-left-radius: 3px;
@@ -172,40 +178,44 @@ p {
   background-color: var(--cor-azul-claro);
 }
 
-.secaoDestaqueFormulario_button:hover {
-  background-color: var(--cor-cinza);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
 .secaoSobre {
-  padding: 60px 30px;
+  padding: 60px 0px;
 }
 
-.flex-col {
+.secaoSobre_h2, .secaoSobre_p {
+  color: var(--cor-cinza);
   text-align: left;
-  padding-bottom: 40px;
+  line-height: 1.5;
+  padding: 20px 80px;
 }
+
 
 .secaoSobre_h2 {
   font-size: 1.4em;
-  color: var(--cor-cinza);
-  padding-left: 20px;
-  padding-bottom: 40px;
 }
 
 .secaoSobre_p {
-  font-size: 1em;
-  color: var(--cor-cinza);
-  text-align: left;
+  font-size: 1em;  
 }
 
 .secaoSobre_span {
   display: flex;
   font-size: 1em;
   color: var(--cor-cinza-claro);
-  padding: 40px 20px;
+  padding: 40px 60px;
   line-height: 1.8;
+}
+
+.secaoSobre_ul {
+  list-style: disc;
+  padding: 40px 120px 0px 120px;
+}
+
+.secaoSobre_li {
+  color: var(--cor-cinza-claro);
+  font-size: 1em;
+  line-height: 2;
+  padding: 10px 0px;
 }
 
 .secaoSobre_button {
@@ -220,11 +230,22 @@ p {
   padding: 10px 70px;
 }
 
-.secaoSobre_button:hover {
-  color: var(--cor-branco);
-  background-color: var(--cor-cinza-claro);
-  transition: 0.5s;
-  cursor: pointer;
+.first-flex, .second-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.second-flex {
+  background-color: var(--cor-cinza-clarinho);
+  padding: 80px 0px;
+  margin: 0 auto;
+}
+
+.logo-python {
+  width: 300px;
+  padding-bottom: 100px;
 }
 
 /* CURSOS */
@@ -236,27 +257,30 @@ p {
   justify-content: center;
   margin: 0px auto;
 }
+
+.secaoCursos img {
+  width: 20vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .secaoCursos img:hover {
   cursor: pointer;
-  background-color: var(--cor-cinza-claro);
+}
+
+.secaoCursos h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .secaoCursos h3 {
   font-weight: bold;
-  font-family: "lato", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 19px;
   margin-bottom: 40px;
   margin-top: 20px;
-
-  font-weight: bold;
-  font-size: 19px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
-
-.secaoCursos h2 {
-  font-size: 19px;
-  font-weight: bold;
 }
 
 .secaoCursos p {
@@ -270,12 +294,6 @@ p {
   color: black;
   margin-top: 15px;
 }
-.secaoCursos img {
-  width: 13vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* CALENDARIO */
 
@@ -286,41 +304,73 @@ p {
   justify-content: center;
   margin: 0px auto;
 }
-.secaoCalendar h2 {
-  padding-bottom: 30px;
+.secaoCalendar_h2 {
+  padding-bottom: 20px;
   font-weight: bolder;
   color: var(--cor-cinza);
 }
+
+.secaoCalendar_p {
+  font-size: 18px;
+  padding: 20px 100px 60px 100px;
+  color: var(--cor-cinza);
+}
+
 .secaoCalendar li {
   border: 1px solid var(--cor-azul-escuro);
-  height: 70vh;
-  width: 30vh;
-  padding-top: 50px;
+  height: 145vh;
+  width: 260px;
   margin: 0px auto;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
+
 .calendario-data {
-  text-align: center;
-  padding: 50px 84px 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 130px;
   font-size: 36px;
   color: var(--cor-branco);
   background-color: var(--cor-azul-escuro);
 }
-.secaoCalendar h3 {
+
+.title-calendar {
   font-weight: normal;
   font-size: 19px;
   margin-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
-.secaoCalendar p {
+
+.subtitle-calendar {
   text-align: center;
-  font-family: "lato";
+  font-family: "Lato", sans-serif;
+  line-height: 2;
   letter-spacing: 1px;
-  line-height: 30px;
   color: var(--cor-cinza-claro);
   font-size: 15px;
-  padding-bottom: 20px;
-  font-weight: 500;
+  padding-bottom: 30px;
+  border-bottom: 0.5px solid var(--cor-cinza-claro);
+}
+
+.calendar-hour {
+  font-family: 'Lato', sans-serif;
+  color: var(--cor-cinza-claro);
+  font-size: 2em;
+  height: 40px;
+  width: 260px;
+  margin: 40px 0px;
+}
+
+.calendar-button {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--cor-azul-claro);
+  color: var(--cor-branco);
+  width: 230px;
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 15px 70px;
 }
 
 .calendario-data-rodape {
@@ -330,67 +380,91 @@ p {
   font-weight: normal;
   padding-top: 25px;
 }
-.calendario-data-rodape button {
-  font-size: 19px;
-  color: var(--cor-branco);
-  background-color: var(--cor-azul-claro);
-  border: none;
-  border-radius: 5px;
-  margin: 0px auto;
-  display: block;
-  margin-top: 15px;
-  padding: 12px 80px 12px;
-}
 
 /* CONTATO  */
 div.flex {
-  background-color: rgb(243, 243, 243);
+  background-color: var(--cor-cinza-clarinho);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 50px 0px;
+
 }
-div.flex h2 {
-  padding-top: 20px;
-  font-weight: 600;
+
+.contato-informacoes {
+  padding: 80px 80px 0px 80px;
+  line-height: 2;
 }
-div.flex p {
+
+.contato-informacoes__h2 {
+  display: flex;
+  width: 260px;
+  justify-content: center;
+
+}
+.contato-informacoes__p {
+  padding-bottom: 30px;
   font-size: 15px;
-  text-align: left;
-  font-weight: 500;
   color: var(--cor-cinza-claro);
-  margin: 20px 40px -20px;
+  text-align: left;
+  
 }
-div.flex a {
-  margin: 0px 0px -20px;
+
+.contato-informacoes__links {
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
   color: var(--cor-cinza-claro);
 }
-div.flex li {
-  text-align: left;
-  font-weight: 500;
+
+.flex-column {
+  display: flex;
+  align-items: center;
+
+}
+
+.formulario {
+  line-height: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.formulario > input[type=text] {
+  width: 260px;
+  height: 40px;
+  padding-left: 10px;
+  color: var(--cor-cinza-claro);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.formulario > input[type=submit] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60px;
+  height: 35px;
   margin-top: 10px;
+  align-items: flex-end;
 }
-div.form-input-model {
-  font-family: "lato";
-  padding: 10px 60px 10px 0px;
-}
-div.flex input[type="submit"] {
-  font-size: 0.8;
-  border-radius: 5px;
-  padding: 5px 5px 5px;
-  margin-left: 80px;
-  border: 1px solid rgb(209, 209, 209);
-}
+
 img.icons8 {
-  padding-left: 40px;
   width: 20px;
 }
+
 form {
   padding-bottom: 30px;
 }
 /* FOOTER  */
 footer {
-  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 .arrow {
@@ -471,13 +545,18 @@ footer {
     width: 500px;
   }
 
+  .secaoDestaqueFormulario_button:hover {
+    background-color: var(--cor-cinza);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
   .secaoSobre {
     padding: 60px 0px;
   }
 
   .secaoSobre_h2 {
     font-size: 24px;
-    padding-left: 0px;
   }
 
   .secaoSobre_p {
@@ -493,12 +572,23 @@ footer {
   .secaoSobre_li {
     color: var(--cor-cinza-claro);
     font-size: 1em;
-    line-height: 1.8;
+    line-height: 1.5;
   }
 
   .secaoSobre_button {
-    margin-left: 20px;
+    margin-left: 80px;
     padding: 10px 20px;
+  }
+
+  .secaoSobre_span {
+    padding: 40px 80px;
+  }
+
+  .secaoSobre_button:hover {
+    color: var(--cor-branco);
+    background-color: var(--cor-cinza-claro);
+    transition: 0.5s;
+    cursor: pointer;
   }
 
   .flex {
@@ -511,13 +601,17 @@ footer {
   .first-flex,
   .second-flex {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 500px;
+    padding: 40px 0px;
+    margin-top: 40px;
   }
 
   .second-flex {
     background-color: #f3f3f3;
+    margin: 60px 0px;
   }
 
   .logo-python {
@@ -531,5 +625,84 @@ footer {
   .flex-col {
     width: 500px;
   }
+
+  .secaoCursos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .secaoCursos__lista {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secaoCursos__lista_1, 
+  .secaoCursos__lista_2 {
+    width: 1600px;
+    justify-content: space-around;
+    padding-bottom: 40px;
+  }
+
+  .secaoCursos__lista_1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .secaoCursos__lista_2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .secaoCursos__lista_li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .calendario {
+    display: flex;
+  }
+
+  .secaoCalendar li {
+    margin: 0px 40px;
+    width: 300px;
+    height: 80vh;
+  }
+
+  .calendario-data {
+    width: 300px;
+  }
+
+  .calendar-hour {
+    text-align: center;
+    width: 300px;
+  }
+
+  .calendar-button {
+    padding: 15px 30px;
+    width: 150px;
+  }
+
+  .calendar-button:hover {
+    color: var(--cor-azul-claro);
+    background-color: var(--cor-cinza-clarinho);
+    border: 1px solid var(--cor-azul-claro);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  div.flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  
+
+  a:hover {
+    color: var(--cor-azul-claro);
+    cursor: pointer;
+  }
+
+
 }
 /* MEDIA QUERIES */
