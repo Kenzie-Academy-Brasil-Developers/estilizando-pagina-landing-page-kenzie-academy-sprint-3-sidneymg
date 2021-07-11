@@ -246,6 +246,7 @@ p {
 .logo-python {
   width: 300px;
   padding-bottom: 100px;
+  padding-top: 80px;
 }
 
 /* CURSOS */
@@ -318,7 +319,7 @@ p {
 
 .secaoCalendar li {
   border: 1px solid var(--cor-azul-escuro);
-  height: 145vh;
+  height: 750px;
   width: 260px;
   margin: 0px auto;
   margin-bottom: 80px;
@@ -666,7 +667,6 @@ footer {
   .secaoCalendar li {
     margin: 0px 40px;
     width: 300px;
-    height: 80vh;
   }
 
   .calendario-data {
@@ -694,6 +694,57 @@ footer {
   div.flex {
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 70px;
+  }
+
+  .formulario {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    width: 540px;
+    justify-content: flex-end;
+  }
+
+  .contato-informacoes {
+    padding-top: 0px;
+    padding-left: 60px;
+    
+  }
+
+  .contato-informacoes__h2 {
+    align-items: flex-end;
+    margin-left: 770px;
+    padding-bottom: 30px;
+  }
+
+  .contato-informacoes__p {
+    padding: 0px;
+  }
+
+  #comment {
+    width: 540px;
+    height: 200px;
+    margin-top: 20px;
+    padding-bottom: 160px;
+  }
+
+  #name {
+    margin-right: 20px;
+  }
+
+  #send {
+    margin-top: 20px;
+  }
+
+  #send:hover {
+    background-color: var(--cor-cinza);
+    color: var(--cor-branco);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+ 
+  .arrow {
+    margin-left: 900px;
   }
 
   a:hover {
